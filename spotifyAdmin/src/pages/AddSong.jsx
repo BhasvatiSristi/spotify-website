@@ -84,7 +84,7 @@ const AddSong = () => {
 
       <div className='flex flex-col gap-2.5'>
         <p>Album</p>
-        <select onChange={(e) => setAlbum(e.target.value)} defaultValue={album} className='bg-transparent outline-green-600 border-2 border-gray-400 p-2.5 w-[150px]'>
+        <select onChange={(e) => setAlbum(e.target.value)} defaultValue={album} className='bg-transparent outline-green-600 border-2 border-gray-400 p-2.5 w-37.5'>
           <option value="none">None</option>
         </select>
       </div>
