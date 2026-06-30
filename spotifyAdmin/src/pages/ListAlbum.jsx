@@ -1,5 +1,8 @@
 import React,{ useState,useEffect } from 'react'
 import { url } from '../App'
+import { toast } from 'react-toastify'
+import axios from "axios"
+
 
 const ListAlbum = () => {
   const [data,setData] = useState([])
@@ -12,6 +15,7 @@ const ListAlbum = () => {
       }
     } catch (error) {
       toast.error("Something went wrong!")
+      console.log(error)
     }
   }
 
